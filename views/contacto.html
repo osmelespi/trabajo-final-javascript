@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Osmel's Cakes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e6bf8f83ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="../assets/images/Logo.png" class="logo" alt="logo" width="250">
+            </a>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./galeria.html">Nuestros Productos</a>
+                </li>
+                <li>
+                    <a href="./presupuesto.html">Pedidos</a>
+                </li>
+                <li>
+                    <a class="enlaceactivo" href="#">Contacto</a>
+                </li>
+            </ul>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button class="boton" >Buscar</button>
+                <a href="./presupuesto.html" class="carrito">
+                    <i class="fa-solid fa-cart-shopping icon-carrito"></i><span class="badge text-bg-secondary" id="contador">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div id="mapa">
+                        <h4>Encuéntranos</h4>
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h4>Contacto</h4>
+                    <div id="contacto">
+                        <p><b>Dirección:</b> <a href="https://www.google.com/maps?q=Calle+Barcelona+nro.+22+Mostóles+Madrid" target="_blank">Calle Barcelona nro. 22 Mostóles Madrid</a></p>
+                        <p><b>Horario:</b> Lunes a Domingo de 9:00 a 18:00</p>
+                        <p><b>Teléfono:</b> +34-677815004</p>
+                        <p><b>Email:</b> <a href="mailto:osmelcakes@gmail.com">osmelcakes@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="redes">
+            Encuentranos en: 
+            <a href="http://www.instagram.com/osmelscake?igsh=YTkyaDEwNGI0Yjht" target="_blank">
+                <img class="icono" src="../assets/images/instagram.png" alt="instagram" width="40">
+            </a>
+            <a href="https://www.tiktok.com/@osmelespinozarami?_t=8qzBMiQWNRR&_r=1" target="_blank">
+                <img class="icono" src="../assets/images/tiktok.png" alt="tiktok" width="40">
+            </a>
+            <a href="https://www.facebook.com/share/mLUH5zJj4Tm3GxZz/" target="_blank">
+                <img class="icono" src="../assets/images/facebook.png" alt="facebook" width="40">
+            </a>
+        </div>
+        <div class="derechos">
+            <div class="row">
+                <div class="col-6">
+                    Copyright © 2025 Pasteleria Osmel's Cakes
+                </div>
+                <div class="col-6">
+                    Calle Barcelona nro. 22 Mostóles Madrid
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

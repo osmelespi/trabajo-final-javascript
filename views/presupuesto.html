@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Osmel's Cakes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e6bf8f83ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="../assets/images/Logo.png" class="logo" alt="logo" width="250">
+            </a>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./galeria.html">Nuestros Productos</a>
+                </li>
+                <li>
+                    <a class="enlaceactivo" href="#">Pedidos</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button class="boton" >Buscar</button>
+                <a href="./presupuesto.html" class="carrito">
+                    <i class="fa-solid fa-cart-shopping icon-carrito"></i><span class="badge text-bg-secondary" id="contador">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h4 class="text-center mt-5">Presupuesto Personalizado</h4>
+        <div class="row mt-5">
+            <div class="col-8 form-box">
+                <section class="formulario">
+                    <form action="#" method="post" id="formPresupuesto">
+                        <!-- Parte 1: Datos Personales -->
+                        <fieldset class="mb-4 p-2 form-group border rounded-2">
+                            <legend class="w-auto px-2">Datos Personales</legend>
+                            <div class="mb-3 d-flex align-items-center form-validation">
+                                <label for="nombre" class="form-label me-3" style="width: 150px;">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                <small>Error mensaje</small>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center form-validation">
+                                <label for="apellidos" class="form-label me-3" style="width: 150px;">Apellidos:</label>
+                                <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+                                <small>Error mensaje</small>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center form-validation">
+                                <label for="telefono" class="form-label me-3" style="width: 150px;">Teléfono de Contacto:</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                                <small>Error mensaje</small>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center form-validation">
+                                <label for="email" class="form-label me-3" style="width: 150px;">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <small>Error mensaje</small>
+                            </div>
+                        </fieldset>
+
+                        <!-- Parte 2: Presupuesto -->
+                        <fieldset class="mb-4 p-2 form-group border rounded-2">
+                            <legend class="w-auto px-2">Presupuesto</legend>
+                            <div class="mb-3 d-flex align-items-center">
+                                <label for="tipoProducto" class="form-label me-3" style="width: 150px;">Elige un Producto:</label>
+                                <select id="tipoProducto" name="tipoProducto" class="form-select" required multiple>
+                                    
+                                </select>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center form-validation">
+                                <label for="cantidad" class="form-label me-3" style="width: 150px;">Plazos en meses para entrega:</label>
+                                <input type="number" id="cantidad" name="cantidad" class="form-control" min="0" max="4" required>
+                                <small>Error mensaje</small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" style="font-weight: bold;">Extras:</label>
+                                <div class="d-flex gap-3">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="dobleRelleno" name="extras" value="5" class="form-check-input checkbox-extra">
+                                        <label for="dobleRelleno" class="form-check-label">Doble Relleno (€5.00)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="velas" name="extras" value="2" class="form-check-input checkbox-extra">
+                                        <label for="velas" class="form-check-label">Velas (€2.00)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="topping" name="extras" value="3" class="form-check-input checkbox-extra">
+                                        <label for="topping" class="form-check-label">Topping (€3.00)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="topperFelizCumple" name="extras" value="4" class="form-check-input checkbox-extra">
+                                        <label for="topperFelizCumple" class="form-check-label">Topper Feliz Cumpleaños (€4.00)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-3 d-flex align-items-center">
+                                    <label for="cantidad" class="form-label me-3" style="width: 150px; font-weight: bold;">Total presupuesto:</label>
+                                    <h4 id="totalPresupuesto" class="form-control text-center fw-bold" style="width: 150px;">0.00 €</h4>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Parte 3: Aceptar Términos -->
+                        <fieldset class="mb-4 p-2 form-group border rounded-2">
+                            <legend class="w-auto px-2">Aceptar Condiciones y Envio de presupuesto</legend>
+                            <div class="form-check">
+                                <input type="checkbox" id="terminos" name="terminos" class="form-check-input" required>
+                                <label for="terminos" class="form-check-label">He leido la política de privacidad</label>
+                            </div>
+                            <div class="mt-3">
+                                <button id="enviar" type="submit" class="btn bg-custom">Enviar</button>
+                                <button id="borrar" type="reset" class="btn bg-custom">Resetear</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+            <div class="col-4 d-flex align-items-start">
+                <section class="carrito-resumen p-3 border rounded w-100">
+                    <div>
+                        <h5>Resumen del Carrito</h5>
+                        <ul id="listaCarrito" class="list-group mb-3">
+                            <!-- Aquí se agregarán dinámicamente los productos del carrito -->
+                            <!-- Ejemplo de producto dinámico -->
+                            <!--
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Producto 1
+                                <button class="btn btn-danger btn-sm eliminar-producto">Eliminar</button>
+                            </li>
+                            -->
+                        </ul>
+                        <button class="btn bg-custom mt-3 w-100" id="vaciarCarrito">Vaciar Carrito</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="redes">
+            Encuentranos en: 
+            <a href="http://www.instagram.com/osmelscake?igsh=YTkyaDEwNGI0Yjht" target="_blank">
+                <img class="icono" src="../assets/images/instagram.png" alt="instagram" width="40">
+            </a>
+            <a href="https://www.tiktok.com/@osmelespinozarami?_t=8qzBMiQWNRR&_r=1" target="_blank">
+                <img class="icono" src="../assets/images/tiktok.png" alt="tiktok" width="40">
+            </a>
+            <a href="https://www.facebook.com/share/mLUH5zJj4Tm3GxZz/" target="_blank">
+                <img class="icono" src="../assets/images/facebook.png" alt="facebook" width="40">
+            </a>
+        </div>
+        <div class="derechos">
+            <div class="row">
+                <div class="col-6">
+                    Copyright © 2025 Pasteleria Osmel's Cakes
+                </div>
+                <div class="col-6">
+                    Calle Barcelona nro. 22 Mostóles Madrid
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script type="module" src="../js/presupuesto.js"></script>
+</body>
+</html>

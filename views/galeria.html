@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Osmel's Cakes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e6bf8f83ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="../assets/images/Logo.png" class="logo" alt="logo" width="250">
+            </a>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="enlaceactivo" href="#">Nuestros Productos</a>
+                </li>
+                <li>
+                    <a href="../views/presupuesto.html">Pedidos</a>
+                </li>
+                <li>
+                    <a href="../views/contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button class="boton" >Buscar</button>
+                <a href="./presupuesto.html" class="carrito">
+                    <i class="fa-solid fa-cart-shopping icon-carrito"></i><span class="badge text-bg-secondary" id="contador">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-3">
+        <section class="galeria">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div id="galeria-fotos" class="row"></div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="redes">
+            Encuentranos en: 
+            <a href="http://www.instagram.com/osmelscake?igsh=YTkyaDEwNGI0Yjht" target="_blank">
+                <img class="icono" src="../assets/images/instagram.png" alt="instagram" width="40">
+            </a>
+            <a href="https://www.tiktok.com/@osmelespinozarami?_t=8qzBMiQWNRR&_r=1" target="_blank">
+                <img class="icono" src="../assets/images/tiktok.png" alt="tiktok" width="40">
+            </a>
+            <a href="https://www.facebook.com/share/mLUH5zJj4Tm3GxZz/" target="_blank">
+                <img class="icono" src="../assets/images/facebook.png" alt="facebook" width="40">
+            </a>
+        </div>
+        <div class="derechos">
+            <div class="row">
+                <div class="col-6">
+                    Copyright © 2025 Pasteleria Osmel's Cakes
+                </div>
+                <div class="col-6">
+                    Calle Barcelona nro. 22 Mostóles Madrid
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script type="module" src="../js/galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+[
+    {
+        "src": "../assets/images/pastel1.jpg",
+        "alt": "Pastel 1",
+        "nombre": "Pastel de Chocolate",
+        "descripcion": "Delicioso pastel de chocolate",
+        "precio": "15.00€"
+    },
+    {
+        "src": "../assets/images/pastel2.jpg",
+        "alt": "Pastel 2",
+        "nombre": "Pastel de Chocolate y nata",
+        "descripcion": "Pastel con chocolate con nata",
+        "precio": "18.00€"
+    },
+    {
+        "src": "../assets/images/pastel3.jpg",
+        "alt": "Pastel 3",
+        "nombre": "Pastel Red velvet",
+        "descripcion": "Clásico pastel de Red Veltet",
+        "precio": "12.00€"
+    },
+    {
+        "src": "../assets/images/pastel4.jpg",
+        "alt": "Pastel 4",
+        "nombre": "Pastel de Queso",
+        "descripcion": "Pastel saludable de Queso",
+        "precio": "14.00€"
+    },
+    {
+        "src": "../assets/images/pastel5.jpg",
+        "alt": "Pastel 5",
+        "nombre": "Pastel de Vainilla",
+        "descripcion": "Elegante pastel de vainilla",
+        "precio": "20.00€"
+    },
+    {
+        "src": "../assets/images/pastel6.jpg",
+        "alt": "Pastel 6",
+        "nombre": "Pastel de Limón",
+        "descripcion": "Pastel con un toque cítrico",
+        "precio": "13.00€"
+    },
+    {
+        "src": "../assets/images/pastel7.jpg",
+        "alt": "Pastel 7",
+        "nombre": "Pastel de Coco",
+        "descripcion": "Pastel tropical de coco",
+        "precio": "16.00€"
+    },
+    {
+        "src": "../assets/images/pastel8.jpg",
+        "alt": "Pastel 8",
+        "nombre": "Pastel de Café",
+        "descripcion": "Pastel con sabor a café",
+        "precio": "17.00€"
+    },
+    {
+        "src": "../assets/images/pastel9.jpg",
+        "alt": "Pastel 9",
+        "nombre": "Pastel de Mango",
+        "descripcion": "Pastel exótico de mango",
+        "precio": "19.00€"
+    },
+    {
+        "src": "../assets/images/pastel10.jpg",
+        "alt": "Pastel 10",
+        "nombre": "Pastel de Nuez",
+        "descripcion": "Pastel con nueces crujientes",
+        "precio": "15.00€"
+    },
+    {
+        "src": "../assets/images/pastel11.jpg",
+        "alt": "Pastel 11",
+        "nombre": "Pastel de Chocolate y Fresas",
+        "descripcion": "Esponjoso pastedl de chocolate con fresas",
+        "precio": "22.00€"
+    },
+    {
+        "src": "../assets/images/pastel12.jpg",
+        "alt": "Pastel 12",
+        "nombre": "Pastel de Frutas",
+        "descripcion": "Pastel con frutas frescas",
+        "precio": "18.00€"
+    }
+]

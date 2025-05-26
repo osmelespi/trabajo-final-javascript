@@ -1,0 +1,35 @@
+[
+    {
+        "titulo": "La tendencia de la repostería creativa, innovación y arte en la cocina",
+        "descripcion": "Los pasteles minimalistas están ganando popularidad por su diseño elegante y sencillo. Descubre cómo esta tendencia está transformando la pastelería moderna.",
+        "autor": "María López",
+        "fecha": "26-08-2024",
+        "imagen": "./assets/images/pastel-minimalista.png",
+        "enlace": "https://www.getafecapital.com/2024/08/la-tendencia-de-la-reposteria-creativa-innovacion-y-arte-en-la-cocina/"
+    },
+    {
+        "titulo": "La primera pastelería sin azúcar, sin gluten y sin lactosa de Madrid",
+        "descripcion": "Explora las mejores recetas de pasteles veganos que no comprometen el sabor ni la textura. Perfectos para cualquier ocasión.",
+        "autor": "Carlos Pérez",
+        "fecha": "11-03-2024",
+        "imagen": "./assets/images/pastel-vegano.jpg",
+        "enlace": "https://okdiario.com/coolthelifestyle/lifestyle/llega-madrid-primera-pasteleria-sin-azucar-gluten-lactosa-nicolina-656994"
+    },
+    {
+        "titulo": "Pastelería creativa en casa",
+        "descripcion": "Aprende las técnicas más avanzadas para decorar pasteles con fondant y sorprende a tus clientes o invitados, tambien aprende como preparar el fondant con sabores.",
+        "autor": "Ana García",
+        "fecha": "14-06-2013",
+        "imagen": "./assets/images/pastel-fondant.jpg",
+        "enlace": "https://www.diariodeleon.es/ocio/destinos/130614/407017/pasteleria-creativa-casa.html"
+    },
+    {
+        "titulo": "La industria de la panadería y bollería avanza en materia de sostenibilidad",
+        "descripcion": "Conoce cómo los pasteleros están adoptando prácticas sostenibles para reducir el impacto ambiental en la industria.",
+        "autor": "Luis Martínez",
+        "fecha": "19-09-2024",
+        "imagen": "./assets/images/pasteleria-sostenible.jpg",
+        "enlace": "https://financialfood.es/la-industria-de-la-panaderia-y-bolleria-avanza-en-materia-de-sostenibilidad/"
+    }
+   
+]
